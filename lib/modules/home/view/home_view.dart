@@ -30,9 +30,9 @@ class HomeScreen extends StatelessWidget {
             } else if (state is MoviesObtained) {
               return CardSwiper(movies: state.movie);
             } else {
-              return const Center(
+              return Center(
                 child:
-                    Column(children: [Text('Error al cargar las peliculas')]),
+                    Column(children: const [Text('Error al cargar las peliculas')]),
               );
             }
           },

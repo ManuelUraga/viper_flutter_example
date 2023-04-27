@@ -16,8 +16,8 @@ class CardSwiper extends StatelessWidget {
       child: Swiper(
         itemCount: movies.length,
         layout: SwiperLayout.STACK,
-        itemWidth: size.width * 0.5,
-        itemHeight: size.height * 0.5,
+        itemWidth: size.width * .7,
+        itemHeight: size.height * .5,
         itemBuilder: (_, index) {
           final movie = movies[index];
           return GestureDetector(
