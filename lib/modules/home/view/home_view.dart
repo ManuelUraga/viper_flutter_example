@@ -29,7 +29,11 @@ class HomeScreen extends StatelessWidget {
               );
             } else if (state is MoviesObtained) {
               return CardSwiper(movies: state.movie);
-            } else {
+            } else if(state is FailureObtainedState){
+              return Center(
+                child: Column(children: [Text(state.failureMessage)]),
+              );
+            }else {
               return Center(
                 child:
                     Column(children: const [Text('Error al cargar las peliculas')]),

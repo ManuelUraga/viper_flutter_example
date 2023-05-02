@@ -12,4 +12,7 @@ class MoviesObtained extends HomeState {
   MoviesObtained(this.movie);
 }
 
-class FailureObtainedState extends HomeState {}
+class FailureObtainedState extends HomeState {
+  final String failureMessage;
+  FailureObtainedState(this.failureMessage);
+}
